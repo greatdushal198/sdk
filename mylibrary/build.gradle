@@ -38,9 +38,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
-                from components.release
-
+            myPublicationName(MavenPublication){
                 groupId = 'com.github.greatdushal198'
                 artifactId = 'my-library'
                 version = '2.0.0'
